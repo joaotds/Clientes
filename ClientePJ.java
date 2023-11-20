@@ -5,46 +5,43 @@ public class ClientePJ extends Cliente {
 	private String razaoSocial;
 	private String cnpj;
 	
+	//Métodos
+	@Override
 	public String getNome() {
 		return this.razaoSocial;
 	}
 
+	@Override
 	public String getNroDoc() {
 		return this.cnpj;
 	}
 
+	@Override
 	public String getTipo() {
-		return "Pessoa Jurídica";
+		return "J";
 	}
 
-	/**
-	 * @return the razaoSocial
-	 */
+	//GETs e SETs
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
 
-	/**
-	 * @param razaoSocial the razaoSocial to set
-	 */
 	public void setRazaoSocial(String razaoSocial) {
 		this.razaoSocial = razaoSocial;
 	}
 
-	/**
-	 * @return the cnpj
-	 */
 	public String getCnpj() {
 		return cnpj;
 	}
 
-	/**
-	 * @param cnpj the cnpj to set
-	 */
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
 
+	@Override
+	public String getDados() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
-
