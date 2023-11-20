@@ -5,45 +5,36 @@ public class ClientePF extends Cliente {
 	private String nomePF;
 	private String cpf;
 	
+	//Métodos
 	public String getNome() {
 		return this.nomePF;
 	}
-
+	
 	public String getNroDoc() {
 		return this.cpf;
 	}
-
+	
 	public String getTipo() {
-		return "Pessoa Física";
+		return "F";
 	}
-
-	/**
-	 * @return the nomePF
-	 */
+	
+	public String getDados() {
+	String dados = this.id +  " | " + this.email + " | " + this.getNome() + " | " + this.nomeSocial + " | " + this.getCpf();
+	return dados;
+	}
+	
+	//GETs e SETs
 	public String getNomePF() {
 		return nomePF;
 	}
-
-	/**
-	 * @param nomePF the nomePF to set
-	 */
 	public void setNomePF(String nomePF) {
 		this.nomePF = nomePF;
 	}
-
-	/**
-	 * @return the cpf
-	 */
 	public String getCpf() {
 		return cpf;
 	}
-
-	/**
-	 * @param cpf the cpf to set
-	 */
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
 	
 }
